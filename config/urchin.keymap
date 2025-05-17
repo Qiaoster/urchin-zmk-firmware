@@ -20,15 +20,11 @@
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <180>;
             //quick-tap-ms = <150>; // second tap of double tap (of a hold_tap key) always result in tap
             //require-prior-idle-ms = <100>; // quick tap but of all keys
             bindings = <&kp>, <&kp>;
-        };
-        &lt {
-            flavor = "hold-preferred";
-            tapping-term-ms = <180>;
         };
         combos {
             compatible = "zmk,combos";
