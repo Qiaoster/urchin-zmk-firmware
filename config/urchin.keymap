@@ -26,6 +26,10 @@
             //require-prior-idle-ms = <100>; // quick tap but of all keys
             bindings = <&kp>, <&kp>;
         };
+        &lt {
+            flavor = "hold-preferred";
+            tapping-term-ms = <180>;
+        };
         combos {
             compatible = "zmk,combos";
             combo_esc {
