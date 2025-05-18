@@ -27,8 +27,9 @@
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <180>;
+            retro-tap = true;
             bindings = <&mo>, <&kp>;
         };
         combos {
